@@ -1,4 +1,5 @@
 plugins {
+	id 'eclipse'
 	id 'java'
 	id 'war'
 	id 'org.springframework.boot' version '2.7.12'	// 3 이상 버전은 JAVA17만 가능. 11은 2. 버전을 추천
@@ -7,7 +8,7 @@ plugins {
 
 group = 'toy.msg'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '11'	// JAVA 11
 
 configurations {
 	compileOnly {
